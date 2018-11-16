@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'Barry', // Title for your website.
-  tagline: 'A website for testing',
+  tagline: 'Code My Life',
   url: 'https://zhso.net', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -38,10 +38,11 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    { doc: 'jpeg-exif', label: 'Open Source' },
+    { doc: 'doc4', label: 'API' },
+    { page: 'help', label: 'Help' },
+    { blog: true, label: 'Blog' },
+    { search: true }
   ],
 
   // If you have users set above, you add it here:
@@ -54,8 +55,8 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#2E8555',
-    secondaryColor: '#205C3B',
+    primaryColor: '#333333',
+    secondaryColor: '#cccccc',
   },
 
   /* Custom fonts for website */
@@ -101,6 +102,11 @@ const siteConfig = {
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
+  algolia: {
+    apiKey: 'my-api-key',
+    indexName: 'my-index-name',
+    algoliaOptions: {} // Optional, if provided by Algolia
+  },
 };
 
 module.exports = siteConfig;
