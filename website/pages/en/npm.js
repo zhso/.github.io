@@ -23,20 +23,13 @@ class Help extends React.Component {
     const language = this.props.language || '';
     const supportLinks = [
       {
-        content: `[jpeg-exif](${docUrl(
-          'jpeg-exif.html',
-          language,
-        )})`,
-        title: 'Browse Docs',
+        content: `fetch exif data from image files`,
+        title: 'jpeg-exif',
       },
       {
-        content: 'Ask questions about the documentation and project',
-        title: 'Join the community',
-      },
-      {
-        content: "Find out what's new with this project",
-        title: 'Stay up to date',
-      },
+        content: 'wrapped with mutation components',
+        title: 'react-apollo-forms',
+      }
     ];
 
     return (
@@ -44,9 +37,9 @@ class Help extends React.Component {
         <Container className="mainContainer documentContainer postContainer">
           <div className="post">
             <header className="postHeader">
-              <h1>Need help?</h1>
+              <h1>NPM Packages</h1>
             </header>
-            <p>This project is maintained by a dedicated group of people.</p>
+            <p>Open-Source NPM Packages, Free To Use, Under MIT License.</p>
             <GridBlock contents={supportLinks} layout="threeColumn" />
           </div>
         </Container>
